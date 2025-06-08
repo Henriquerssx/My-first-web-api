@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: my_first_web_api
+    ports:
+      - "8080:8080"
+    restart: always
